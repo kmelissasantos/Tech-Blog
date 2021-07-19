@@ -1,9 +1,5 @@
-const router = require('express').Router();
-
-const {
-    User,
-    Post
-} = require('../../models');
+const router = require('express').Router()
+const { User, Post, Comment } = require('../../models')
 
 //find all
 router.get('/', (req, res) => {
@@ -70,3 +66,5 @@ router.post('/', (req, res) => {
             res.status(500).json(err);
         });
 })
+
+module.exports = router;
