@@ -73,7 +73,7 @@ The user should clone the repository from GitHub and open up the project in thei
 <br>User will need to run node.js and perform an _npm install_ for all necessary dependencies listed below.</br>
 
 ## Link to Application
-
+https://tech-blogms.herokuapp.com/
 
 
 ## ✏️Dependencies
