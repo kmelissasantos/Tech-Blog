@@ -1,0 +1,15 @@
+ <div>
+        <h2 class="dash-title">Dashboard</h2>
+        <a href="/dashboard/create/"><button id="create-post">Create a Post</button></a>
+{{#if posts.length}}
+    </div>
+
+    {{#each posts as |post|}}
+        {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}"><button>Edit Post</button></a>
+        </div>
+    {{/each}}
+
+{{else}}
+<h6>Currently No Posts!</h6>
+{{/if}}
